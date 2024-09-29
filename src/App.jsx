@@ -2,6 +2,9 @@
 import Best from "./components/Best"
 import Card from "./components/Card"
 import'./App.css'
+import About from "./Pages/About"
+import Contact from "./Pages/Contact"
+import {  Link } from "react-router-dom";
 function App() {
 
   return (
@@ -43,11 +46,11 @@ function App() {
             tabIndex={0}
             className="menu dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">REVIEWS</a></li>
-            <li><a href="#">VIDEOS</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><Link to="#">HOME</Link></li>
+            <li><Link to="/About">ABOUT</Link></li>
+            <li><Link to="#">REVIEWS</Link></li>
+            <li><Link  to="#">VIDEOS</Link></li>
+            <li><Link to="/Contant">CONTACT</Link></li>
           </ul>
         </div>
       </div>
@@ -59,11 +62,11 @@ function App() {
           className="h-10" 
         />
         <ul className="menu menu-horizontal px-1 space-x-8">
-          <li><a href="#" className="text-lg font-medium text-[#c99484]">HOME</a></li>
-          <li><a href="#" className="text-lg font-medium">ABOUT</a></li>
+          <li><Link href="/" className="text-lg font-medium text-[#c99484]">HOME</Link></li>
+          <li><Link to="/About" className="text-lg font-medium">ABOUT</Link></li>
           <li><a href="#" className="text-lg font-medium">REVIEWS</a></li>
           <li><a href="#" className="text-lg font-medium">VIDEOS</a></li>
-          <li><a href="#" className="text-lg font-medium">CONTACT</a></li>
+          <li><Link to="/Contact" className="text-lg font-medium">CONTACT</Link></li>
         </ul>
       </div>
 
@@ -381,12 +384,10 @@ text="Aliquet ut vel faucibus gravida tellus non ipsum ullamcorper adipiscing fe
 
 <footer className="footer w-full bg-base-200 text-base-content rounded p-10 flex flex-col max-md:w-full">
   <div className='flex flex-wrap md:flex-nowrap justify-between items-center w-full mb-6'>
-    {/* الشعار */}
     <div className='flex justify-center items-center mb-4 md:mb-0'>
       <img className='w-[10vh] h-[5vh]' src="https://websitedemos.net/food-blogger-02/wp-content/uploads/sites/793/2021/03/food-blogger-site-logo.svg" />
     </div>
 
-    {/* الروابط الرئيسية */}
     <nav className="flex flex-wrap justify-center md:justify-between items-center text-gray-500 mb-4 md:mb-0 max-md:space-y-2 md:space-y-0">
       <a className="link link-hover mx-2">Home</a>
       <a className="link link-hover mx-2">About</a>
@@ -395,7 +396,6 @@ text="Aliquet ut vel faucibus gravida tellus non ipsum ullamcorper adipiscing fe
       <a className="link link-hover mx-2">Contact</a>
     </nav>
 
-    {/* الروابط الاجتماعية */}
     <nav className='flex justify-center items-center'>
       <div className="flex space-x-4">
         <a>
@@ -417,15 +417,13 @@ text="Aliquet ut vel faucibus gravida tellus non ipsum ullamcorper adipiscing fe
     </nav>
   </div>
 
-  {/* الفقرة السفلية */}
   <aside className='w-full mt-6'>
     <div className='flex flex-wrap justify-around text-center text-gray-400 space-y-2 md:space-y-0'>
       <p>© {new Date().getFullYear()} Food Blogger & Influencer</p>
       <p>Powered by Food Blogger & Influencer</p>
     </div>
   </aside>
-</footer>
-
+</footer> 
 
 
     </>
