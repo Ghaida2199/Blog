@@ -1,0 +1,169 @@
+
+  @media (max-width: 768px) {
+    section {
+      flex-direction: column; 
+    }
+    .w-full {
+      width: 100%; 
+    }
+    .h-auto {
+      height: auto; 
+    }
+    .mb-8 {
+      margin-bottom: 2rem; 
+    }
+    .gap-4 {
+      gap: 1rem; 
+    }
+    .text-lg {
+      font-size: 1.25rem; 
+    }
+    img {
+      width: 100%; 
+    }
+    button {
+      width: 100%; 
+    }
+  }
+
+  
+  @media (max-width: 768px) {
+    section {
+      padding: 1rem;  
+    }
+
+    .h-auto {
+      height: auto;  
+    }
+
+    .flex-wrap {
+      flex-direction: column;  
+    }
+
+    .w-full {
+      width: 100%; 
+    }
+
+    .mb-4 {
+      margin-bottom: 1rem; 
+    }
+
+    .text-center {
+      text-align: center; 
+    }
+
+    .pl-8 {
+      padding-left: 0;  
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .flex-wrap {
+      flex-direction: column; 
+      align-items: center; 
+    }
+
+    .mb-6 {
+      margin-bottom: 2rem;  
+    }
+
+    nav a {
+      margin: 0.5rem 0;  
+    }
+
+    .space-y-2 {
+      margin-bottom: 0.5rem;  
+    }
+  }
+
+  @media (max-width: 480px) {
+    img {
+      width: 8vh;  
+      height: 4vh;
+    }
+
+    nav a {
+      font-size: 0.875rem; 
+    }
+
+    .space-y-2 {
+      margin-bottom: 1rem;  
+    }
+
+}
+
+@media (max-width: 768px) {
+  section {
+    height: auto; 
+    padding: 2rem 1rem; 
+  }
+
+  h1 {
+    font-size: 3.5vh; 
+    line-height: 1.4; 
+    margin-bottom: 1rem; 
+  }
+
+  h2 {
+    font-size: 2vh; 
+    margin-bottom: 1.5rem; 
+  }
+
+  button {
+    width: 18vh; 
+    height: 6vh; 
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 1rem; 
+  }
+
+  h1 {
+    font-size: 3vh;  
+    line-height: 1.3;  
+    margin-bottom: 1rem;  
+  }
+
+  h2 {
+    font-size: 1.8vh;  
+    margin-bottom: 1rem;  
+  }
+
+  button {
+    width: 15vh; 
+    height: 5vh;  
+    font-size: 0.8rem;  
+  }
+}
+
+@media (max-width: 768px) {
+  .flex-wrap {
+    flex-wrap: wrap;  
+    justify-content: space-around;  
+  }
+  h2 {
+    font-size: 1.25rem;  
+    margin-bottom: 1rem;  
+    text-align: center;  
+  }
+  img {
+    width: 18%;      
+    margin-bottom: 0.5rem;  
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1rem;  
+    margin-bottom: 0.5rem;  
+    text-align: center;  
+  }
+  img {
+    width: 25%;  
+    margin-bottom: 0.5rem;  
+  }
+}
+
